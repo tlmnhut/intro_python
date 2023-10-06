@@ -34,17 +34,17 @@ else:
     comp_percent_convert.append((1/(1 - comp_percent[5]/100) - 1) * 100)
 # it is quite messy, we will reduce them with a for loop in the next homework
 
-# if is_higher[0] is 0, then we can retrieve the term "lower" by lower_higher[0]
-lower_higher = ['lower', 'higher']
+# if is_higher[0] is 0, then we can retrieve the term "higher" by higher_lower[0]
+higher_lower = ['higher', 'lower']
 
 # print the results
 conversion_text = f"""
-Consumer Prices in {city_B} are {round(comp_percent_convert[0], 1)}% {lower_higher[is_higher[0]]} than in {city_A} (without rent)
-Consumer Prices Including Rent in {city_B} are {round(comp_percent_convert[1], 1)}% {lower_higher[is_higher[1]]} than in {city_A}
-Rent Prices in {city_B} are {round(comp_percent_convert[2], 1)}% {lower_higher[is_higher[2]]} than in {city_A}
-Restaurant Prices in {city_B} are {round(comp_percent_convert[3], 1)}% {lower_higher[is_higher[3]]} than in {city_A}
-Groceries Prices in {city_B} are {round(comp_percent_convert[4], 1)}% {lower_higher[is_higher[4]]} than in {city_A}
-Local Purchasing Power in {city_B} is {round(comp_percent_convert[5], 1)}% {lower_higher[is_higher[5]]} than in {city_A}
+Consumer Prices in {city_B} are {round(comp_percent_convert[0], 1)}% {higher_lower[is_higher[0]]} than in {city_A} (without rent)
+Consumer Prices Including Rent in {city_B} are {round(comp_percent_convert[1], 1)}% {higher_lower[is_higher[1]]} than in {city_A}
+Rent Prices in {city_B} are {round(comp_percent_convert[2], 1)}% {higher_lower[is_higher[2]]} than in {city_A}
+Restaurant Prices in {city_B} are {round(comp_percent_convert[3], 1)}% {higher_lower[is_higher[3]]} than in {city_A}
+Groceries Prices in {city_B} are {round(comp_percent_convert[4], 1)}% {higher_lower[is_higher[4]]} than in {city_A}
+Local Purchasing Power in {city_B} is {round(comp_percent_convert[5], 1)}% {higher_lower[is_higher[5]]} than in {city_A}
 """
 print(conversion_text)
 
