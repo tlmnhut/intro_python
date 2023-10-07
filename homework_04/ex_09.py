@@ -21,7 +21,7 @@ round_results = [round(percent, 1) for percent in comp_percent_convert] # list c
 # for percent in comp_percent_convert:
 #     round_results.append(round(percent, 1))
 
-# if is_higher[0] is 0, then we can retrieve the term "higher" by lower_higher[0]
+# if is_higher[0] is 0, then we can retrieve the term "higher" by higher_lower[0]
 higher_lower = ['higher', 'lower']
 lh_convert = [higher_lower[i] for i in is_higher] # list comprehension
 # # which is equal to
@@ -32,7 +32,7 @@ lh_convert = [higher_lower[i] for i in is_higher] # list comprehension
 # print the results
 conversion_text = f"""
 Consumer Prices in {city_B} are {round_results[0]}% {lh_convert[0]} than in {city_A} (without rent)
-Consumer Prices Including Rent in {round_results[1]}% are {lh_convert[1]} than in {city_A}
+Consumer Prices Including Rent in {city_B} are {round_results[1]}% {lh_convert[1]} than in {city_A}
 Rent Prices in {city_B} are {round_results[2]}% {lh_convert[2]} than in {city_A}
 Restaurant Prices in {city_B} are {round_results[3]}% {lh_convert[3]} than in {city_A}
 Groceries Prices in {city_B} are {round_results[4]}% {lh_convert[4]} than in {city_A}
