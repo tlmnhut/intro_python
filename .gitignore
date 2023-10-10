@@ -111,5 +111,4 @@ ENV/
 app/static/app.db
 
 # Specific spaces
-./practice_01/ex_01.py
-./practice_01/ex_02.py
+
