@@ -111,5 +111,4 @@ ENV/
 app/static/app.db
 
 # Specific spaces
-./practice_02/multilingual_vocab_sol.py
-./practice_02/wordle_sol.py
+
