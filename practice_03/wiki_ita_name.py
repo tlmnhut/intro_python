@@ -77,8 +77,8 @@ def extract_info(soup, save_path):
             all_records.append(record)
 
     # save file in JSON format
-    with open(save_path, "w") as f:
-        json.dump(all_records, f, indent=4)
+    with open(save_path, "w", encoding='utf-8') as f:
+        json.dump(all_records, f, ensure_ascii=False, indent=4)
 
 
 def download_images(wiki_url):
